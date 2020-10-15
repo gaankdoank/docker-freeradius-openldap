@@ -1,0 +1,17 @@
+version: '3'
+services:
+ radius:
+  image: gaankdoank/freeradius-openldap
+  #image: freeradius/freeradius-server
+  #build: .
+  ports:
+    - 1812-1813:1812-1813/udp
+  #volumes:
+    #- ./krb5.conf:/etc/krb5.conf:ro
+    #- ./samba/nsswitch.conf:/etc/nsswitch.conf
+  extra_hosts:
+    - "ad.trm.net:192.168.30.138"
+
+#volumes:
+ #krb5.conf:
+ #nsswitch.conf:
