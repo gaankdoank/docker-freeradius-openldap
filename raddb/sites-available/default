@@ -883,13 +883,13 @@ post-auth {
 #		attr_filter.access_challenge.post-auth
 	}
 	
-	if (LDAP-Group == "cn=superuser,ou=privileges,dc=noc,dc=ibstowerdev,dc=com") {
+	if (LDAP-Group == "cn=superuser,ou=privileges,dc=yourdomain,dc=com") {
                 update reply {
                 cisco-avpair = "shell:priv-lvl=15"
                 }
                 #noop
         }
-        elsif (LDAP-Group == "cn=readonly,ou=privileges,dc=noc,dc=ibstowerdev,dc=com") {
+        elsif (LDAP-Group == "cn=readonly,ou=privileges,dc=yourdomain,dc=com") {
                 update reply {
                 cisco-avpair = "shell:priv-lvl=1"
                 }
