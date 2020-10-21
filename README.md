@@ -1,2 +1,2 @@
 # docker-freeradius-openldap
-Docker image with freeradius &amp; openldap inside
+Docker image with freeradius &amp; external openldap
