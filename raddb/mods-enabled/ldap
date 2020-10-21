@@ -16,7 +16,7 @@ ldap {
 	#  - ldaps:// (LDAP over SSL)
 	#  - ldapi:// (LDAP over Unix socket)
 	#  - ldapc:// (Connectionless LDAP)
-	server = '192.168.30.4'
+	server = 'your-openldap-ip'
 #	server = 'ldap.rrdns.example.org'
 #	server = 'ldap.rrdns.example.org'
 
@@ -25,12 +25,12 @@ ldap {
 
 	#  Administrator account for searching and possibly modifying.
 	#  If using SASL + KRB5 these should be commented out.
-	identity = 'cn=ldapadm,dc=noc,dc=ibstowerdev,dc=com'
-	password = Alhamdulillah@)!(
-
+	identity = 'cn=superuser,dc=yourdomain,dc=com'
+	password = yourpassword
+	
 	#  Unless overridden in another section, the dn from which all
 	#  searches will start from.
-	base_dn = 'dc=noc,dc=ibstowerdev,dc=com'
+	base_dn = 'dc=yourdomain,dc=com'
 
 	#
 	#  You can run the 'ldapsearch' command line tool using the
